@@ -1,0 +1,154 @@
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarBtnGrey {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+}
+
+.navbarBtnReg {
+  width: Hug (71px) px;
+  height: Hug (44px) px;
+  padding: 10px 16px 10px 16px;
+  gap: 10px;
+  border-radius: 5px;
+  color: white;
+  background: #643f82;
+}
+
+.MainPage {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto 0;
+
+  align-items: center;
+  height: 90vh;
+  width: 338px;
+}
+
+.setBet {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.gameCube {
+  width: 130px;
+  height: 130px;
+  left: 104px;
+  gap: 0px;
+  border-radius: 4.67px 0px 0px 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid #42165d;
+  margin-bottom: 10px;
+}
+
+.selectBet {
+  width: 338px;
+  height: 40px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 6px;
+  border: 1px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+label {
+  margin-top: 20px;
+}
+
+.btnForBet {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 338px;
+}
+
+.btnBet {
+  width: 100%;
+}
+
+.firdtBtn,
+.secondBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnBetToDo {
+  background: #37ac00;
+
+  &:hover {
+    background: #41ca00;
+    transition: background 0.3s;
+  }
+}
+
+.btnBet,
+.btnBetNum {
+  background: #643f82;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #8151a8;
+  }
+}
+
+.activebtnStyle {
+  width: 100%;
+}
+
+.activebtnStyle,
+.activebtnStyleNum {
+  background: #f6a200;
+  height: 44px;
+  border-radius: 5px;
+  color: white;
+  margin: 1%;
+}
+
+.activebtnStyleNum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnBet,
+.btnBetNum,
+.btnBetToDo {
+  height: 44px;
+  border-radius: 5px;
+  color: white;
+  margin: 1%;
+}
+
+.btnBetNum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inpExactNum {
+  width: 5%;
+  border-radius: 5px;
+  text-align: center;
+ 
+}

@@ -9,9 +9,11 @@ export default function StartBalance() {
   return (
     <div>
       <div>
-        {playBalance <= 0
-          ? 'Ваш баланс 0, игра окончена'
-          : `Ваш баланс: ${playBalance}`}
+        {playBalance <= 0 ? (
+          <div>Ваш баланс 0, игра окончена</div>
+        ) : (
+          <div>Ваш баланс: {playBalance}</div>
+        )}
       </div>
     </div>
   );

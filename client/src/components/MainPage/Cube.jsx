@@ -5,31 +5,22 @@ import { $numberCube } from '../../effector/stores';
 export default function Cube() {
   const number = useUnit($numberCube);
 
-  console.log('из стора число кубика', number);
-
   let cubeImage;
 
-  switch (number) {
-    case 1:
-      cubeImage = '/imgCube/1.JPG';
-      break;
-    case 2:
-      cubeImage = '/imgCube/2.JPG';
-      break;
-    case 3:
-      cubeImage = '/imgCube/3.JPG';
-      break;
-    case 4:
-      cubeImage = '/imgCube/4.JPG';
-      break;
-    case 5:
-      cubeImage = '/imgCube/5.JPG';
-      break;
-    case 6:
-      cubeImage = '/imgCube/6.JPG';
-      break;
-    default:
-      cubeImage = '/imgCube/6.JPG'; 
+  if (number === 1) {
+    cubeImage = '/imgCube/1.JPG';
+  } else if (number === 2) {
+    cubeImage = '/imgCube/2.JPG';
+  } else if (number === 3) {
+    cubeImage = '/imgCube/3.JPG';
+  } else if (number === 4) {
+    cubeImage = '/imgCube/4.JPG';
+  } else if (number === 5) {
+    cubeImage = '/imgCube/5.JPG';
+  } else if (number === 6) {
+    cubeImage = '/imgCube/6.JPG';
+  } else {
+    cubeImage = '/imgCube/7.png';
   }
 
   return (

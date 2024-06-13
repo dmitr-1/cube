@@ -1,4 +1,5 @@
 const bets = [
+  { label: 'Выберите ставку' },
   { value: 1, label: '1.00' },
   { value: 2, label: '2.00' },
   { value: 5, label: '5.00' },

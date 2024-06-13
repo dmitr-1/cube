@@ -8,10 +8,9 @@ export default function ButtonMain() {
 
   const [inpNum, setIntNum] = useState(0);
 
-
   const handleButtonClick = (value) => {
     if (value === 'num') {
-      updateBet(inpNum); 
+      updateBet(inpNum);
     } else {
       updateBet(value);
     }
@@ -23,7 +22,7 @@ export default function ButtonMain() {
 
   const handleMakeBet = () => {
     const diceResult = Math.floor(Math.random() * 6) + 1;
-    updateNumCube(diceResult); 
+    updateNumCube(diceResult);
   };
 
   return (
@@ -78,7 +77,12 @@ export default function ButtonMain() {
           onChange={handleInputChange}
         ></input>
       </button>
-      <button className='btnBetToDo' type='submit' onClick={handleMakeBet}>
+      <button
+        className='btnBetToDo'
+        type='submit'
+        onClick={handleMakeBet}
+        disabled={playBalance <= 0}
+      >
         Сделать ставку
       </button>
     </div>

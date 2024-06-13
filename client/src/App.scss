@@ -150,5 +150,14 @@ label {
   width: 5%;
   border-radius: 5px;
   text-align: center;
- 
+}
+
+.cubeSize {
+  width: 80%;
+}
+
+.gameCube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

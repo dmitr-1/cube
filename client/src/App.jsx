@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Routes> */}
-      <MainPage />
-      {/* </Routes> */}
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+      </Routes>
     </>
   );
 }

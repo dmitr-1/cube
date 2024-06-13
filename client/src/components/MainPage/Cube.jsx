@@ -1,8 +1,9 @@
 import React from 'react';
 import { useUnit } from 'effector-react';
-import { $numberCube } from '../../effector/stores';
+import { $numberCube, $playBalace } from '../../effector/stores';
 
 export default function Cube() {
+  const playBalance = useUnit($playBalace);
   const number = useUnit($numberCube);
 
   let cubeImage;
@@ -20,12 +21,19 @@ export default function Cube() {
   } else if (number === 6) {
     cubeImage = '/imgCube/6.JPG';
   } else {
-    cubeImage = '/imgCube/7.png';
+    cubeImage = '/imgCube/8.gif';
   }
 
   return (
     <div className='gameCube'>
-      <img src={cubeImage} alt='cube' className='cubeSize' />
+      {playBalance <= 0 ? (
+        <div style={{ textAlign: 'center' }}>
+          <img src='/imgCube/8.gif' alt='cube' className='cubeSize' />
+          <div>GAME OVER</div>
+        </div>
+      ) : (
+        <img src={cubeImage} alt='cube' className='cubeSize' />
+      )}
     </div>
   );
 }

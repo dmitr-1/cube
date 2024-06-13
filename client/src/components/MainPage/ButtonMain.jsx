@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { useUnit } from 'effector-react';
 import { updateBet, updateNumCube } from '../../effector/stores';
 import { $activeBtn, $playBalace } from '../../effector/stores';
+
 export default function ButtonMain() {
+  
   const typeButton = useUnit($activeBtn);
   const playBalance = useUnit($playBalace);
-
   const [inpNum, setIntNum] = useState(0);
 
   const handleButtonClick = (value) => {
